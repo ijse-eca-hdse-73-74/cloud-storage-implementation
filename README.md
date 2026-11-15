@@ -23,7 +23,7 @@ In its current state, the application persists binary payloads directly to the l
 ## ⚙️ Technology Stack
 
 * **Runtime Environment:** Java 25
-* **Application Framework:** Spring Boot 4.1.0
+* **Application Framework:** Spring Boot 4.1.2
 * **Build Automation:** Apache Maven
 * **Boilerplate Reduction:** Lombok
 * **Current State:** Local File I/O (Pre-Migration)
