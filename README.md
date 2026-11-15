@@ -66,7 +66,7 @@ Endpoint validation must be conducted using standard REST clients. Ensure HTTP h
 
 Click the button below to import the pre-configured API collection directly into your workspace:
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/ijse-eca-5768309/workspace/eca-71-72/collection/47280517-4016875b-ef7a-4453-b069-3a44d2781ad3?action=share&creator=47280517)
+[![Run in Postman](https://documenter.getpostman.com/view/34588088/2sBYHaQHoe)
 
 ---
 
