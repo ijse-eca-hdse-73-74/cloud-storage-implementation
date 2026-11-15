@@ -64,9 +64,9 @@ cd cloud-storage-implementation
 
 Endpoint validation must be conducted using standard REST clients. Ensure HTTP headers specify `Content-Type: multipart/form-data` during binary transmissions.
 
-Click the button below to import the pre-configured API collection directly into your workspace:
+Click the button below to view and import the pre-configured API collection directly into your workspace:
 
-[![Run in Postman](https://documenter.getpostman.com/view/34588088/2sBYHaQHoe)
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://documenter.getpostman.com/view/34588088/2sBYHaQHoe)
 
 ---
 
