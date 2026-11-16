@@ -5,3 +5,12 @@ spring:
     multipart:
       max-file-size: 10MB
       max-request-size: 10MB
+  profiles:
+    active: aws
+
+aws:
+  s3:
+    bucket-name: "eca-ijse"
+    region: "ap-southeast-2"
+    access-key: ""
+    secret-key: ""

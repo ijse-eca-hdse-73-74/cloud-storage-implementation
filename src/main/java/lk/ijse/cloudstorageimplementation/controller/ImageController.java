@@ -11,6 +11,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.List;
 import java.util.Map;
 
@@ -54,7 +55,7 @@ public class ImageController {
     public ResponseEntity<Resource> getImage(@PathVariable String filename) throws IOException {
         try {
             Resource resource = storageService.load(filename);
-            String contentType = Files.probeContentType(resource.getFile().toPath());
+            String contentType = Files.probeContentType(Path.of(filename));
             return ResponseEntity.ok()
                     .contentType(MediaType.parseMediaType(contentType != null ? contentType : "application/octet-stream"))
                     .body(resource);
