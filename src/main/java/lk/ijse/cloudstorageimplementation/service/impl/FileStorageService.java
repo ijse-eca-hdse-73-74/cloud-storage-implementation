@@ -1,6 +1,7 @@
 package lk.ijse.cloudstorageimplementation.service.impl;
 
 import lk.ijse.cloudstorageimplementation.service.StorageService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.stereotype.Service;
@@ -26,6 +27,7 @@ import java.util.stream.Stream;
  */
 
 @Service
+@Profile("local")
 public class FileStorageService implements StorageService {
 
     private final Path storageDir = Path.of(

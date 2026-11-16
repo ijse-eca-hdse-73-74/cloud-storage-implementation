@@ -5,8 +5,10 @@ spring:
     multipart:
       max-file-size: 10MB
       max-request-size: 10MB
+  profiles:
+    active: azure
 
 azure:
   storage:
-    connection-string: ${AZURE_STORAGE_CONNECTION_STRING}
+    connection-string: ""
     container-name: "eac"

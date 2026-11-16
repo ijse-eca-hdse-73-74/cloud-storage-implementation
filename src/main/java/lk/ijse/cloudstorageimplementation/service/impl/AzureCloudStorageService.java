@@ -10,6 +10,7 @@ import com.azure.storage.blob.options.BlobParallelUploadOptions;
 import lk.ijse.cloudstorageimplementation.service.StorageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Profile;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Service;
@@ -32,7 +33,7 @@ import java.util.stream.Collectors;
  */
 
 @Service
-@Primary
+@Profile("azure")
 public class AzureCloudStorageService implements StorageService {
 
     @Autowired
